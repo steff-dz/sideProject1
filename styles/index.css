@@ -30,6 +30,7 @@ section {
 	margin: 125px auto;
 	border-radius: 20px;
 	position: relative;
+	box-shadow: 0 1px 25px 0 hsl(237, 12%, 33%);
 }
 
 #heroImg {
@@ -76,5 +77,50 @@ p {
 	padding: 0 5px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
+	#boxImg {
+		display: block;
+		position: absolute;
+		bottom: 245px;
+		left: 220px;
+		/* position: relative;
+		top: 521px;
+		left: 212px; */
+
+		z-index: 10;
+	}
+
+	section {
+		position: relative;
+		background-image: url(/faq-accordion-card-main/images/bg-pattern-desktop.svg);
+		background-position: -563px -296px;
+		width: 800px;
+		overflow: hidden;
+	}
+
+	#heroImg {
+		display: none;
+	}
+
+	#heroImgDesktop {
+		display: block;
+		position: absolute;
+		top: 71px;
+		left: -79px;
+	}
+
+	#mainCard {
+		position: absolute;
+		top: 33px;
+		right: 70px;
+		width: 300px;
+	}
+
+	h1 {
+		align-self: flex-start;
+	}
+
+	h2 {
+		width: 300px;
+	}
 }
