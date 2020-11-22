@@ -80,13 +80,9 @@ p {
 @media only screen and (min-width: 1440px) {
 	#boxImg {
 		display: block;
-		position: absolute;
-		bottom: 245px;
-		left: 220px;
-		/* position: relative;
-		top: 521px;
-		left: 212px; */
-
+		position: relative;
+		top: 390px;
+		left: 227px;
 		z-index: 10;
 	}
 
@@ -96,6 +92,7 @@ p {
 		background-position: -563px -296px;
 		width: 800px;
 		overflow: hidden;
+		margin: 0 auto;
 	}
 
 	#heroImg {
