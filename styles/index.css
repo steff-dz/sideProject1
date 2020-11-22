@@ -112,6 +112,18 @@ p {
 		z-index: 10;
 	}
 
+	.moveBox {
+		animation-name: animateBox;
+		animation-fill-mode: forwards;
+		animation-duration: .5s;
+	}
+
+	@keyframes animateBox {
+		to {
+			transform: translateX(-80px);
+		}
+	}
+
 	section {
 		position: relative;
 		top: -100px;
