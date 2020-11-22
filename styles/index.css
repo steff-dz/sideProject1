@@ -31,7 +31,7 @@ section {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-color: white;
-	height: 500px;
+	height: 550px;
 	width: 325px;
 	margin: 125px auto;
 	border-radius: 20px;
@@ -68,6 +68,11 @@ h2 {
 	justify-content: space-between;
 	align-items: center;
 	color: hsl(237, 12%, 33%);
+	cursor: pointer;
+}
+
+h2:hover {
+	color: hsl(14, 88%, 65%);
 }
 
 p {
@@ -75,12 +80,27 @@ p {
 	top: -50px;
 	padding: 0;
 	margin: 0;
+	font-size: 1.3rem;
 	visibility: hidden;
 }
 
 .downArrow {
 	height: 8px;
 	padding: 0 5px;
+	/* animation-fill-mode: forwards;
+	animation-duration: .5s; */
+}
+
+.animateArrow {
+	animation-name: turnArrow;
+	animation-fill-mode: forwards;
+	animation-duration: .5s;
+}
+
+@keyframes turnArrow {
+	to {
+		transform: rotate(180deg);
+	}
 }
 
 @media only screen and (min-width: 1440px) {
@@ -98,8 +118,13 @@ p {
 		background-image: url(/faq-accordion-card-main/images/bg-pattern-desktop.svg);
 		background-position: -563px -296px;
 		width: 800px;
+		height: 500px;
 		overflow: hidden;
 		margin: 0 auto;
+	}
+
+	.downArrow {
+		height: 10px;
 	}
 
 	#heroImg {
@@ -126,5 +151,6 @@ p {
 
 	h2 {
 		width: 300px;
+		font-size: 1.5rem;
 	}
 }
